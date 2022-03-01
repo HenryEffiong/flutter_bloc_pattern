@@ -44,7 +44,7 @@ class MyApp extends StatelessWidget {
         BlocProvider(
           create: (context) => TodosStatusBloc(
             todosBloc: BlocProvider.of<TodosBloc>(context),
-          )..add(UpdateTodosStatus()),
+          )..add(const UpdateTodosStatus()),
         ),
       ],
       child: MaterialApp(
